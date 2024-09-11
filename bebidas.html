@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+
+    <header>
+      <div class="menu logo-nav">
+        <img src="doc/logobarsval.jpg" alt="Logo" class="logo-image">
+        <a href="index.html" class="logo">BARSVAL</a>
+        <label class="menu-icon"><span class="fas fa-bars icomin"></span></label>
+        <nav class="navigation">
+          <ul>  
+            <li><a href="bebidas.html">Bebidas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+            <li class="search-icon">
+                <input type="text" id="search-input" placeholder="Buscar producto..." onkeyup="buscarProductos()">
+              <label class="icon">
+                <span class="fas fa-search"></span>
+              </label>
+            </li>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+
+    <main>
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <img src="" alt="" class="modal-img" id="modal-img">
+        </div>
+        <div class="modal-boton" id="modal-boton">X</div>
+      </div>
+    
+      <div class="container-productos">
+        <div class="categoria" id="champagnes">
+          <h2>Champagnes</h2>
+          <div class="cards-container">
+              <div class="card">
+                  <img src="Champagnes/1.jpg" class="card-img">
+                  <h5>CANTI ROSE EXTRA DRY 750ML + 2 COPAS</h5>
+                  <p>S/.<small class="precio">62</small></p>
+                  <a href="contacto.html" class="button">Comprar</a>
+              </div>
+              <div class="card">
+                  <img src="Champagnes/2.jpg" class="card-img">
+                  <h5>ESPUM ACQUESI ASTI 750ML</h5>
+                  <p>S/.<small class="precio">58</small></p>
+                  <a href="contacto.html" class="button">Comprar</a>
+              </div>
+              <div class="card">
+                  <img src="Champagnes/3.jpg" class="card-img">
+                  <h5>ESPUM ACQUESI BRACHETTO 750ML ROJO</h5>
+                  <p>S/.<small class="precio">58</small></p>
+                  <a href="contacto.html" class="button">Comprar</a>
+              </div>
+              <div class="card">
+                  <img src="Champagnes/4.jpg" class="card-img">
+                  <h5>ESPUM TABERNERO VICTORIO MUSCAT ROSSO</h5>
+                  <p>S/.<small class="precio">40</small></p>
+                  <a href="contacto.html" class="button">Comprar</a>
+              </div>
+              <div class="card">
+                  <img src="Champagnes/5.jpg" class="card-img">
+                  <h5>ESPUM TABERNERO ESPECIAL ROSE</h5>
+                  <p>S/.<small class="precio">18.9</small></p>
+                  <a href="contacto.html" class="button">Comprar</a>
+              </div>
+              <div class="card">
+                  <img src="Champagnes/6.jpg" class="card-img">
+                  <h5>ESPUM NAPOLEON BLANCO</h5>
+                  <p>S/.<small class="precio">15.5</small></p>
+                  <a href="contacto.html" class="button">Comprar</a>
+              </div>
+          </div>
+      </div>
+    
+      <div class="categoria" id="cremas">
+        <h2>Cremas</h2>
+        <div class="cards-container">
+            <div class="card">
+                <img src="cremas/7.jpg" class="card-img">
+                <h5>CREMA BAILEYS ORIGINAL 750ML</h5>
+                <p>S/.<small class="precio">79.9</small></p>
+                <a href="contacto.html" class="button">Comprar</a>
+            </div>
+            <div class="card">
+                <img src="cremas/8.jpg" class="card-img">
+                <h5>CREMA CAROLANS 750ML</h5>
+                <p>S/.<small class="precio">60.9</small></p>
+                <a href="contacto.html" class="button">Comprar</a>
+            </div>
+              
+    </div>
+       
+    <div class="categoria" id="Piscos">
+      <h2>Piscos</h2>
+      <div class="cards-container">
+        <div class="card">
+            <img src="Pisco/9.jpg" class="card-img">
+            <h5>PISCO PANCHO FIERRO ACHOLADO + VINO BORGOÑA</h5>
+            <p>S/.<small class="precio">45</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+          <div class="card">
+              <img src="Pisco/10.jpg" class="card-img">
+              <h5>PISCO TABERNERO LA BOTIJA ACHOLADO</h5>
+              <p>S/.<small class="precio">50</small></p>
+              <a href="contacto.html" class="button">Comprar</a>
+          </div>
+          <div class="card">
+              <img src="Pisco/11.jpg" class="card-img">
+              <h5>PISCO TABERNERO LA BOTIJA LA QUEBRANTA</h5>
+              <p>S/.<small class="precio">50</small></p>
+              <a href="contacto.html" class="button">Comprar</a>
+          </div>
+          <div class="card">
+              <img src="Pisco/12.jpg" class="card-img">
+              <h5>PISCO MASCO QUEIROLO DE CIRUELA</h5>
+              <p>S/.<small class="precio">35</small></p>
+              <a href="contacto.html" class="button">Comprar</a>
+          </div>
+          <div class="card">
+              <img src="Pisco/13.jpg"card-img">
+              <h5>PISCO AYRA ITALIA</h5>
+              <p>S/.<small class="precio">35</small></p>
+              <a href="contacto.html" class="button">Comprar</a>
+          </div>
+          <div class="card">
+              <img src="Pisco/14.jpg" class="card-img">
+              <h5>PISCO QUEIROLO PURO ACHOLADO</h5>
+              <p>S/.<small class="precio">45</small></p>
+              <a href="contacto.html" class="button">Comprar</a>
+          </div>
+          <div class="card">
+              <img src="Pisco/15.jpg" class="card-img">
+              <h5>PISCO QUEIROLO PURO ITALIA</h5>
+              <p>S/.<small class="precio">45</small></p>
+              <a href="contacto.html" class="button">Comprar</a>
+          </div>
+          <div class="card">
+            <img src="Pisco/16.jpg" class="card-img">
+            <h5>PISCO QUEIROLO PURO QUEBRANTA</h5>
+            <p>S/.<small class="precio">45</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Pisco/17.jpg" class="card-img">
+            <h5>PISCO TABERNERO SOUR CHICHA MORADA</h5>
+            <p>S/.<small class="precio">23</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+      </div>
+  </div>
+    
+  <div class="categoria" id="rones">
+    <h2>Ron</h2>
+    <div class="cards-container">
+        <div class="card">
+            <img src="Ron/18.jpg" class="card-img">
+            <h5>RON VIEJO DE CALDAS + VASO 8 AÑOS</h5>
+            <p>S/.<small class="precio">70</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Ron/19.jpg" class="card-img">
+            <h5>RON FLOR DE CAÑA DE CAFÉ EXPRESSO</h5>
+            <p>S/.<small class="precio">65</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Ron/20.jpg" class="card-img">
+            <h5>RON FLOR DE CAÑA 5 AÑOS </h5>
+            <p>S/.<small class="precio">67</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Ron/21.jpg" class="card-img">
+            <h5>RON BARCELO GRAN AÑEJO</h5>
+            <p>S/.<small class="precio">60</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Ron/22.jpg" class="card-img">
+            <h5>RON FLOR DE CAÑA 4 AÑOS RUBIO</h5>
+            <p>S/.<small class="precio">55.9</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Ron/23.jpg" class="card-img">
+            <h5>RON MALIBU</h5>
+            <p>S/.<small class="precio">45</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Ron/24.jpg" class="card-img">
+            <h5>RON MEDELLIN AÑEJO 3 AÑOS 1L.</h5>
+            <p>S/.<small class="precio">60</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Ron/25.jpg" class="card-img">
+            <h5>RON CAPITAN MORGAN</h5>
+            <p>S/.<small class="precio">40</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Ron/26.jpg" class="card-img">
+            <h5>RON CARTAVIO BLANCO 1L.</h5>
+            <p>S/.<small class="precio">35</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Ron/27.jpg" class="card-img">
+            <h5>RON CARTAVIO BLACK 1L.</h5>
+            <p>S/.<small class="precio">35</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Ron/28.jpg" class="card-img">
+            <h5>RON CARTAVIO SUPERIOR 1L.</h5>
+            <p>S/.<small class="precio">35</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Ron/29.jpg" class="card-img">
+            <h5>RON MEDELLIN AÑEJO 3 AÑOS 750ML</h5>
+            <p>S/.<small class="precio">45</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Ron/30.jpg" class="card-img">
+            <h5>RON VIEJO DE CALDAS 3 AÑOS 750ML</h5>
+            <p>S/.<small class="precio">40</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        
+    </div>
+</div>
+<div class="categoria" id="vinos">
+    <h2>Vinos</h2>
+    <div class="cards-container">
+        <div class="card">
+            <img src="Vinos/31.jpg" class="card-img">
+            <h5>LA MAS BONITA ROSE</h5>
+            <p>S/.<small class="precio">41.5</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Vinos/32.jpg" class="card-img">
+            <h5>TABERNERO BORGOÑA + 2 VASOS</h5>
+            <p>S/.<small class="precio">43</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Vinos/33.jpg" class="card-img">
+            <h5>CASILLERO DEL DIABLO DEVILS CARNAVAL RED 750ML</h5>
+            <p>S/.<small class="precio">33.9</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Vinos/34.jpg" class="card-img">
+            <h5>VINO TRIVENTO RESERVA BALBEC 750ML</h5>
+            <p>S/.<small class="precio">35.5</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Vinos/35.jpg" class="card-img">
+            <h5>CASILLERO DEL DIABLO RED BLEND 750ML</h5>
+            <p>S/.<small class="precio">33.9</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Vinos/36.jpg" class="card-img">
+            <h5>CASILLERO DEL DIABLO MALBEC</h5>
+            <p>S/.<small class="precio">33.9</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Vinos/37.jpg" class="card-img">
+            <h5>CASILLERO DEL DIABLO MERLOT</h5>
+            <p>S/.<small class="precio">33.9</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Vinos/38.jpg" class="card-img">
+            <h5>TRAPICHE ASTICA CABERNET SAUVIGNON</h5>
+            <p>S/.<small class="precio">28.9</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Vinos/39.jpg" class="card-img">
+            <h5>FRONTERA CABERNET SAUV</h5>
+            <p>S/.<small class="precio">26</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Vinos/40.jpg" class="card-img">
+            <h5>FRONTERA SAUVIGNON PEDRO GIMENES</h5>
+            <p>S/.<small class="precio">26.5</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Vinos/41.jpg" class="card-img">
+            <h5>TABERNERO GRAN TINTO FINA RESERVA MALBEC</h5>
+            <p>S/.<small class="precio">26</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Vinos/42.jpg" class="card-img">
+            <h5>RESERVADO SAUVIGNON BLANC PEDRO GIMENES</h5>
+            <p>S/.<small class="precio">24.5</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Vinos/43.jpg" class="card-img">
+            <h5>RESERVADO SWEET RED</h5>
+            <p>S/.<small class="precio">25</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Vinos/44.jpg" class="card-img">
+            <h5>RESERVADO ROSE</h5>
+            <p>S/.<small class="precio">25</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Vinos/45.jpg" class="card-img">
+            <h5>TABERNERO OPORTO EL FRAILE 750ML</h5>
+            <p>S/.<small class="precio">26.5</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Vinos/46.jpg" class="card-img">
+            <h5>OCUAJE BLANCO</h5>
+            <p>S/.<small class="precio">24.5</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Vinos/47.jpg" class="card-img">
+            <h5>TABERNERO TUYO ROSE</h5>
+            <p>S/.<small class="precio">18.5</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Vinos/48.jpg" class="card-img">
+            <h5>TABERNERO GRAN BLANCO</h5>
+            <p>S/.<small class="precio">21.9</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Vinos/49.jpg" class="card-img">
+            <h5>TABERNERO ROSE</h5>
+            <p>S/.<small class="precio">21.9</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="card">
+            <img src="Vinos/50.jpg" class="card-img">
+            <h5>QUEIROLO ROSE</h5>
+            <p>S/.<small class="precio">18.5</small></p>
+            <a href="contacto.html" class="button">Comprar</a>
+        </div>
+        <div class="categoria" id="vodka">
+            <h2>Vodka</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="Vodka/51.jpg" class="card-img">
+                    <h5>SKYY PREMIUM</h5>
+                    <p>S/.<small class="precio">62.9</small></p>
+                    <a href="contacto.html" class="button">Comprar</a>
+                </div>
+                <div class="card">
+                    <img src="Vodka/52.jpg" class="card-img">
+                    <h5>CREMA CAROLANS 750ML</h5>
+                    <p>S/.<small class="precio">68</small></p>
+                    <a href="contacto.html" class="button">Comprar</a>
+                </div>
+                  
+        </div>
+        <div class="categoria" id="whisky">
+            <h2>Whisky</h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="Whisky/53.jpg" class="card-img">
+                    <h5>JW BLACK LABEL</h5>
+                    <p>S/.<small class="precio">160</small></p>
+                    <a href="contacto.html" class="button">Comprar</a>
+                </div>
+                <div class="card">
+                    <img src="Whisky/54.jpg" class="card-img">
+                    <h5>WISKY CHIVAS REGAL</h5>
+                    <p>S/.<small class="precio">140</small></p>
+                    <a href="contacto.html" class="button">Comprar</a>
+                </div>
+                <div class="card">
+                    <img src="Whisky/55.jpg" class="card-img">
+                    <h5>WISKY SOMETING ESPECIAL 750ML</h5>
+                    <p>S/.<small class="precio">52</small></p>
+                    <a href="contacto.html" class="button">Comprar</a>
+                </div>
+                <div class="card">
+                    <img src="Whisky/56.jpg" class="card-img">
+                    <h5>WISKY SOMETING ESPECIAL 200ML</h5>
+                    <p>S/.<small class="precio">25</small></p>
+                    <a href="contacto.html" class="button">Comprar</a>
+                </div>
+                <div class="card">
+                    <img src="Whisky/57.jpg" class="card-img">
+                    <h5>JW RED LABEL</h5>
+                    <p>S/.<small class="precio">55</small></p>
+                    <a href="contacto.html" class="button">Comprar</a>
+                </div>
+                <div class="card">
+                    <img src="Whisky/58.jpg" class="card-img">
+                    <h5>SHOMETING ESPECIAL 750ML</h5>
+                    <p>S/.<small class="precio">52.9</small></p>
+                    <a href="contacto.html" class="button">Comprar</a>
+                </div>
+                <div class="card">
+                    <img src="Whisky/59.jpg" class="card-img">
+                    <h5>BALLANTINES FINEST</h5>
+                    <p>S/.<small class="precio">52</small></p>
+                    <a href="contacto.html" class="button">Comprar</a>
+                </div>
+                <div class="card">
+                    <img src="Whisky/60.jpg" class="card-img">
+                    <h5>OLD TIMES BLACK 750ML</h5>
+                    <p>S/.<small class="precio">35</small></p>
+                    <a href="contacto.html" class="button">Comprar</a>
+                </div>
+                <div class="card">
+                    <img src="Whisky/61.jpg" class="card-img">
+                    <h5>OLD TIMES RED 750ML</h5>
+                    <p>S/.<small class="precio">30</small></p>
+                    <a href="contacto.html" class="button">Comprar</a>
+                </div>
+                
+                  
+        </div>
+    </div>
+</div>
+    
+      </div>
+    </main>
+    
+  
+
+<footer class="footer-section">
+  <div class="copyright-area">
+      <div class="container-footer">
+          <div class="row-footer">
+              <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                  <div class="copyright-text">
+                      <p>Copyright &copy; 2024, todos los derechos reservados <a href="index.html">BARSVAL</a></p>
+                  </div>
+              </div>
+              <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                  <div class="footer-menu">
+                      <ul>
+                          <li><a href="bebidas.html">Bebidas</a></li>
+                          <li><a href="contacto.html">Contacto</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</footer> 
+
+    <script src="search.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script  src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script  src="assets/js/scripts.js"></script>
+    <script src="assets/js/carrito.js"></script>
+    <script src="assets/js/pedido.js"></script>
+    <script src="assets/js/compra.js"></script>
+    <script src="assets/js/search.js"></script>
+</body>
+</html>

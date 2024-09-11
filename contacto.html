@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="menu logo-nav">
+      <img src="doc/logobarsval.jpg" alt="Logo" class="logo-image">
+      <a href="index.html" class="logo">BARSVAL</a>
+      <label class="menu-icon"><span class="fas fa-bars icomin"></span></label>
+      <nav class="navigation">
+        <ul>  
+          <li><a href="bebidas.html">Bebidas</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <div class="container-contacto">
+    <br>
+    <form action="#" id="form" method="POST">
+      <div class="contact-info">
+
+        <img src="assets/img/nosotros.jpg" alt="Imagen de Contacto" class="contact-image">
+        <h3>Información de Contacto</h3>
+        <p><strong>Dirección:</strong> Av.Moyococha #15C</p>
+        <p><strong>Números para contactar</strong> 
+        <!-- Botones de WhatsApp con íconos -->
+        <div class="whatsapp-links">
+          <button onclick="window.location.href='https://wa.me/+51976827765'" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> Contacto 1
+          </button>
+          <button onclick="window.location.href='https://wa.me/+51970262954'" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> Contacto 2
+          </button>
+          <button onclick="window.location.href='https://wa.me/+51916596384'" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i> Contacto 3
+          </button>
+        </div>
+        <!-- Mapa -->
+        <script>
+          function initMap() {
+              var location = { lat: -34.397, lng: 150.644 }; // Cambia las coordenadas según tu ubicación
+              var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 15,
+                  center: location
+              });
+              var marker = new google.maps.Marker({
+                  position: location,
+                  map: map
+              });
+          }
+        </script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=TU_CLAVE_DE_API&callback=initMap"></script>
+      
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script src="assets/js/contacto.js"></script>
+      </div>
+    </form>
+    
+    <div class="map-container" id="map"></div>
+  </div>
+
+  <footer class="footer-section">
+    <div class="copyright-area">
+      <div class="container-footer">
+        <div class="row-footer">
+          <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+            <div class="copyright-text">
+              <p>Copyright &copy; 2024, todos los derechos reservados <a href="index.html">BARSVAL</a></p>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+            <div class="footer-menu">
+              <ul>
+                <li><a href="bebidas.html">Bebidas</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
